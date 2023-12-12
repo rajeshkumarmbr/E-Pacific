@@ -54,7 +54,12 @@ function MilestonesPage() {
       </div>
       <div className="flex ">
         {data.map((data) => {
-          return <Card service={data} />;
+          return (
+            <Card
+              service={data}
+              // className={` ${data.img ? " rounded-full" : " rounded-none"}`}
+            />
+          );
         })}
       </div>
     </>
