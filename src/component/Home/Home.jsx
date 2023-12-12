@@ -1,6 +1,7 @@
 import React from "react";
 import Services from "../Services/Services";
 import SecurityPage from "../SecurityPage/SecurityPage";
+import MilestonesPage from "../MilestonesPage/MilestonesPage";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
 
       <Services />
       <SecurityPage />
+      <MilestonesPage />
     </>
   );
 }

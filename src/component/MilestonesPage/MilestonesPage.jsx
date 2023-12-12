@@ -1,10 +1,11 @@
 import React from "react";
+import Card from "../Card/Card";
 import img1 from "../../img/aadhar-logo-classic-logos-of-india-150x150.jpg";
 import img2 from "../../img/MCD-Logo-1-150x150.jpg";
 import img3 from "../../img/BSNL-Logo-150x150.jpg";
 import img4 from "../../img/DDA-Logo-1-150x150.jpg";
-import img5 from "../../img/NDSL-OBC-BANK-150x150.jpg";
-import img6 from "../../img/CSC-logo-150x150.jpg";
+import img5 from "../../img/NDSL-OBC-BANK-150x150.png";
+import img6 from "../../img/CSC-logo-150x150.png";
 
 const data = [
   {
@@ -46,7 +47,18 @@ const data = [
 ];
 
 function MilestonesPage() {
-  return <div>MilestonesPage</div>;
+  return (
+    <>
+      <div className="">
+        <h1 className="text-4xl">MilestonesPage</h1>
+      </div>
+      <div className="flex ">
+        {data.map((data) => {
+          return <Card service={data} />;
+        })}
+      </div>
+    </>
+  );
 }
 
 export default MilestonesPage;

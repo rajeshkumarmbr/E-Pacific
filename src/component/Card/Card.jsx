@@ -8,7 +8,7 @@ function Card({ service }) {
           <img src={service.img} alt="tech-support" className=" w-[100px]" />
         </div>
         <div className=" flex flex-col items-center">
-          <h3 className="">{service.name}</h3>
+          {service.nane && <h3 className="">{service.name}</h3>}
           <p className="w-64">{service.discription} </p>
         </div>
       </div>
