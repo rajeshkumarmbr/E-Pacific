@@ -1,5 +1,5 @@
-import React from "react";
 import Card from "../Card/Card";
+import { useState, useEffect } from "react";
 import img1 from "../../img/aadhar-logo-classic-logos-of-india-150x150.jpg";
 import img2 from "../../img/MCD-Logo-1-150x150.jpg";
 import img3 from "../../img/BSNL-Logo-150x150.jpg";
@@ -46,21 +46,18 @@ const data = [
   },
 ];
 
-function MilestonesPage() {
+function MilestonesPage(roundCard) {
   return (
     <>
-      <div className="">
-        <h1 className="text-4xl">MilestonesPage</h1>
-      </div>
-      <div className="flex ">
-        {data.map((data) => {
-          return (
-            <Card
-              service={data}
-              // className={` ${data.img ? " rounded-full" : " rounded-none"}`}
-            />
-          );
-        })}
+      <div className="w-full bg-pink-500">
+        <div className="">
+          <h1 className="text-4xl">MilestonesPage</h1>
+        </div>
+        <div className="flex ">
+          {data.map((data) => {
+            return <Card key={data.id} service={data} roundCard={roundCard} />;
+          })}
+        </div>
       </div>
     </>
   );

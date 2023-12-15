@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import cssClass from "classnames";
 
-function Navbar({ isHeader }) {
-  const newClass = { "flex-row": !isHeader };
+function Navbar({ isFooter }) {
+  const showRow = isFooter;
   return (
-    <ul className={cssClass("justify-between", "mr-5", newClass)}>
+    <ul
+      className={cssClass("justify-between", "mr-5 flex", {
+        "flex-col": showRow,
+      })}>
       <li>
         <NavLink
           to="/"

@@ -1,10 +1,9 @@
-import React from "react";
 import SupportImg from "../../img/support-1-1536x1333.jpg";
 
 function SecurityPage() {
   return (
     <>
-      <div className=" flex w-full h-[85vh] p-7">
+      <div className=" flex w-full p-7 ">
         <div className=" w-1/2 flex flex-col items-center mt-7">
           <div className="flex flex-col items-center text-5xl leading-normal font-medium">
             <h2 className="">Support and </h2>

@@ -1,9 +1,14 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../img/epacific-logo1-1.png";
 import Navbar from "../Navbar/Navbar";
 // import loc from "https://maps.app.goo.gl/AmvkUtAy8F83gpqj8";
 function Footer() {
+  const [isFooter, setIsFooter] = useState(false);
+  useEffect(() => {
+    setIsFooter(true);
+  }, []);
+
   return (
     <footer className="w-full h-[35vh] bg-sky-500 ">
       <div className=" flex justify-around items-center">
@@ -21,7 +26,7 @@ function Footer() {
         <div className=" flex flex-col ">
           <h3 className="">Quick Links</h3>
           <div className=" w-2/4 text-white">
-            <Navbar />
+            <Navbar isFooter={isFooter} />
           </div>
         </div>
         <div className=" flex flex-col text-white">

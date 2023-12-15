@@ -1,23 +1,22 @@
-import React from "react";
 import AboutImg from "../../img/About-us-1024x907.png";
 
 function About() {
   return (
     <>
-      <div className="w-full h-[85vh] bg-amber-800">
+      <div className="w-full">
         <div className=" flex  flex-col justify-center items-center pt-4">
-          <h1 className=" text-5xl capitalize font-bold"> About us</h1>
+          <h1 className=" text-5xl capitalize font-bold p-6"> About us</h1>
           <div className="flex  w-full  ">
-            <div className=" w-1/2 bg-zinc-600 h-[400px] flex justify-center items-center ">
-              <img src={AboutImg} alt="About img" className=" w-3/5" />
+            <div className=" w-1/2  flex justify-center items-center ">
+              <img src={AboutImg} alt="About img" className=" w-3/5 p-4" />
             </div>
-            <div className=" w-1/2 bg-green-900 h-[400px] flex flex-col items-center">
+            <div className=" w-1/2  flex flex-col items-center">
               <div className="">
-                <h1 className=" text-3xl font-medium">
+                <h1 className=" text-3xl font-medium p-6">
                   An ISO 9001:2015 Certified Company
                 </h1>
               </div>
-              <div className=" flex flex-col justify-between h-full">
+              <div className=" w-[90%] flex flex-col justify-center">
                 <p className="">
                   We came into existence in 2015 as a Private Limited Firm, to
                   facilitate the delivery of public platform services and
