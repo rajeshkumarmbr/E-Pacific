@@ -1,5 +1,7 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import Card from "../Card/Card";
-import { useState, useEffect } from "react";
 import img1 from "../../img/aadhar-logo-classic-logos-of-india-150x150.jpg";
 import img2 from "../../img/MCD-Logo-1-150x150.jpg";
 import img3 from "../../img/BSNL-Logo-150x150.jpg";
@@ -47,17 +49,26 @@ const data = [
 ];
 
 function MilestonesPage(roundCard) {
+  const settings = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+  };
   return (
     <>
       <div className="w-full bg-pink-500">
         <div className="">
           <h1 className="text-4xl">MilestonesPage</h1>
         </div>
-        <div className="flex ">
+        {/* <div className="flex "> */}
+        <Slider {...settings} className="flex">
           {data.map((data) => {
             return <Card key={data.id} service={data} roundCard={roundCard} />;
           })}
-        </div>
+        </Slider>
+        {/* </div> */}
       </div>
     </>
   );
