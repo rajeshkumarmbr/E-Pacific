@@ -12,7 +12,9 @@ function Navbar({ isFooter }) {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            ` ${isActive ? "text-blue-700" : "text-white"} hover:text-gray-600`
+            ` ${isActive ? " text-sky-400" : "text-white"} ${
+              isFooter ? "text-[#695FE7]" : ""
+            } hover:text-sky-400`
           }>
           Home
         </NavLink>
@@ -21,7 +23,9 @@ function Navbar({ isFooter }) {
         <NavLink
           to="about"
           className={({ isActive }) =>
-            `${isActive ? "text-blue-700" : "text-white"} hover:text-gray-600`
+            `${isActive ? "text-sky-400" : "text-white"} ${
+              isFooter ? "text-[#695FE7]" : ""
+            } hover:text-sky-400`
           }>
           About
         </NavLink>
@@ -30,7 +34,9 @@ function Navbar({ isFooter }) {
         <NavLink
           to="services"
           className={({ isActive }) =>
-            `${isActive ? "text-blue-700" : "text-white"} hover:text-gray-600`
+            `${isActive ? "text-sky-400" : "text-white"} ${
+              isFooter ? "text-[#695FE7]" : ""
+            } hover:text-sky-400`
           }>
           Services
         </NavLink>
@@ -39,7 +45,9 @@ function Navbar({ isFooter }) {
         <NavLink
           to="contact"
           className={({ isActive }) =>
-            `${isActive ? "text-blue-700" : "text-white"} hover:text-gray-600`
+            `${isActive ? "text-sky-400" : "text-white"} ${
+              isFooter ? "text-[#695FE7]" : ""
+            } hover:text-sky-400`
           }>
           Contact
         </NavLink>

@@ -58,9 +58,11 @@ function MilestonesPage(roundCard) {
   };
   return (
     <>
-      <div className="w-full bg-pink-500">
-        <div className="">
-          <h1 className="text-4xl">MilestonesPage</h1>
+      <div className="w-full  overflow-hidden pt-9 pb-9 bg-[#4646FF]">
+        <div className=" w-full p-9">
+          <h1 className="text-5xl font-semibold text-center text-white uppercase">
+            Achievements & Milestones
+          </h1>
         </div>
         {/* <div className="flex "> */}
         <Slider {...settings} className="flex">
