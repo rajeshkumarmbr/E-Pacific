@@ -39,7 +39,7 @@ const data = [
 function Services() {
   return (
     <>
-      <div className="w-full p-5 bg-slate-600 ">
+      <div className="w-full p-5  ">
         <div className=" flex flex-col  items-center">
           <div className="h-full  flex items-center">
             <h3 className=" text-2xl font-semibold uppercase ">OUR SERVICES</h3>

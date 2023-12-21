@@ -3,7 +3,7 @@ import AboutImg from "../../img/About-us-1024x907.png";
 function About() {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full pb-7">
         <div className=" flex  flex-col justify-center items-center pt-4">
           <h1 className=" text-5xl capitalize font-bold p-6"> About us</h1>
           <div className="flex  w-full  ">
