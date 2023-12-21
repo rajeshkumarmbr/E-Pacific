@@ -1,3 +1,4 @@
+import "./navbar.css";
 import { NavLink } from "react-router-dom";
 import cssClass from "classnames";
 
@@ -12,8 +13,8 @@ function Navbar({ isFooter }) {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            ` ${isActive ? " text-sky-400" : "text-white"} ${
-              isFooter ? "text-[#695FE7]" : ""
+            ` ${isActive ? " active" : ""} ${
+              isFooter ? "menu" : ""
             } hover:text-sky-400`
           }>
           Home
@@ -23,8 +24,8 @@ function Navbar({ isFooter }) {
         <NavLink
           to="about"
           className={({ isActive }) =>
-            `${isActive ? "text-sky-400" : "text-white"} ${
-              isFooter ? "text-[#695FE7]" : ""
+            `${isActive ? "active" : ""} ${
+              isFooter ? "menu" : ""
             } hover:text-sky-400`
           }>
           About
@@ -34,8 +35,8 @@ function Navbar({ isFooter }) {
         <NavLink
           to="services"
           className={({ isActive }) =>
-            `${isActive ? "text-sky-400" : "text-white"} ${
-              isFooter ? "text-[#695FE7]" : ""
+            `${isActive ? "active" : ""} ${
+              isFooter ? "menu" : ""
             } hover:text-sky-400`
           }>
           Services
@@ -45,8 +46,8 @@ function Navbar({ isFooter }) {
         <NavLink
           to="contact"
           className={({ isActive }) =>
-            `${isActive ? "text-sky-400" : "text-white"} ${
-              isFooter ? "text-[#695FE7]" : ""
+            `${isActive ? "active" : ""} ${
+              isFooter ? "menu" : ""
             } hover:text-sky-400`
           }>
           Contact
