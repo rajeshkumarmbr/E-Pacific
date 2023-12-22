@@ -4,7 +4,7 @@ function SecurityPage() {
   return (
     <>
       <div className=" flex w-full p-7 ">
-        <div className=" w-1/2 flex flex-col items-center mt-7">
+        <div className="wow animate__animated animate__fadeInLeft w-1/2 flex flex-col items-center mt-7">
           <div className="flex flex-col items-center text-5xl leading-normal font-medium">
             <h2 className="">Support and </h2>
             <h2> Security</h2>
@@ -20,7 +20,7 @@ function SecurityPage() {
             </p>
           </div>
         </div>
-        <div className=" w-1/2">
+        <div className="wow animate__animated animate__fadeInRight w-1/2">
           <img src={SupportImg} alt="Support Img" className="w-[550px]" />
         </div>
       </div>

@@ -45,12 +45,12 @@ function Services() {
             <h3 className=" text-2xl font-semibold uppercase ">OUR SERVICES</h3>
           </div>
           <div className="h-full ">
-            <h1 className=" text-7xl font-medium p-5">
+            <h1 className="wow animate__animated animate__zoomIn animate__slow text-7xl font-medium p-5">
               The one point solution!!
             </h1>
           </div>
         </div>
-        <div className="flex justify-evenly w-full p-4">
+        <div className="  flex justify-evenly w-full p-4 ">
           {data.map((dataItem) => {
             return <Card key={dataItem.id} service={dataItem} />;
           })}

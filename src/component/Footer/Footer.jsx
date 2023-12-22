@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../img/epacific-logo1-1.png";
 import Navbar from "../Navbar/Navbar";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
 // import loc from "https://maps.app.goo.gl/AmvkUtAy8F83gpqj8";
 function Footer() {
   const [isFooter, setIsFooter] = useState(false);
@@ -10,7 +11,7 @@ function Footer() {
   }, []);
 
   return (
-    <footer className="w-full   ">
+    <footer className="w-full border-y-2 border-[#685EE4]  ">
       <div className=" flex justify-around pt-4">
         <div className=" p-5">
           <div className="text-center">
@@ -30,20 +31,24 @@ function Footer() {
           </div>
         </div>
         <div className=" flex flex-col pt-10 ">
-          <div className="">
+          <div className="mb-2">
             <h3 className="">Contact Info</h3>
           </div>
           <NavLink
             to="https://maps.app.goo.gl/AmvkUtAy8F83gpqj8"
             target="_blank"
-            className={` text-[#695FE7] hover:text-sky-400`}>
-            C - 76, Sector 63 Noida,
-            <br /> U.P. 201307
+            className={` text-[#695FE7] hover:text-sky-400 inline-block mb-3`}>
+            <div className="flex justify-between">
+              <FaLocationDot className="text-2xl mr-2" />
+              <p>
+                C - 76, Sector 63 Noida <br /> U.P. 201307
+              </p>
+            </div>
           </NavLink>
           <Link
             to="tel:+91-120-4109041"
             className="text-[#695FE7] hover:text-sky-400">
-            0120-4109041
+            <FaPhone className="inline-block mr-2 text-2xl" /> 0120-4109041
           </Link>
         </div>
         <div className="">

@@ -4,7 +4,7 @@ function Card({ service, roundCard }) {
   return (
     <>
       <section
-        className={`p-4 rounded-lg 
+        className={`wow animate__animated animate__zoomIn animate__slow  p-4 rounded-lg 
         ${roundCard ? "" : "cardRound"} 
          flex flex-col m-4 justify-between`}>
         <div className=" flex justify-center">

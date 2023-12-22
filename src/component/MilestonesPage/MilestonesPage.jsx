@@ -58,7 +58,7 @@ function MilestonesPage(roundCard) {
   };
   return (
     <>
-      <div className="w-full  overflow-hidden pt-9 pb-9 bg-[#4646FF]">
+      <div className="wow animate__animated animate__flash w-full  overflow-hidden pt-9 pb-9 bg-[#4646FF]">
         <div className=" w-full p-9">
           <h1 className="text-5xl font-semibold text-center text-white uppercase">
             Achievements & Milestones

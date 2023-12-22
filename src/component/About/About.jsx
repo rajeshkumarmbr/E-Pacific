@@ -3,14 +3,14 @@ import AboutImg from "../../img/About-us-1024x907.png";
 function About() {
   return (
     <>
-      <div className="w-full pb-7">
+      <div className="w-full pb-9">
         <div className=" flex  flex-col justify-center items-center pt-4">
           <h1 className=" text-5xl capitalize font-bold p-6"> About us</h1>
           <div className="flex  w-full  ">
-            <div className=" w-1/2  flex justify-center items-center ">
+            <div className="wow animate__animated animate__fadeInLeft animate__slow w-1/2  flex justify-center items-center ">
               <img src={AboutImg} alt="About img" className=" w-3/5 p-4" />
             </div>
-            <div className=" w-1/2  flex flex-col items-center">
+            <div className="wow animate__animated animate__fadeInRight animate__slow w-1/2  flex flex-col items-center">
               <div className="">
                 <h1 className=" text-3xl font-medium p-6">
                   An ISO 9001:2015 Certified Company
