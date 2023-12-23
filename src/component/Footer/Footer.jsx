@@ -11,7 +11,7 @@ function Footer() {
   }, []);
 
   return (
-    <footer className="w-full border-y-2 border-[#685EE4]  ">
+    <footer className="w-full border-y-2 border-[#685EE4] ">
       <div className=" flex justify-around pt-4">
         <div className=" p-5">
           <div className="text-center">
