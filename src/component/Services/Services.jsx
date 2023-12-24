@@ -10,21 +10,21 @@ const data = [
     img: img1,
     name: "tech support",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Tech support services provide expert assistance for resolving technical issues, ensuring smooth operation of software, hardware, and networks with customer satisfaction as a priority.",
   },
   {
     id: 2,
     img: img2,
     name: "app development",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "App development involves designing, coding, and testing software applications for mobile or web platforms, addressing user needs and functionality requirements.",
   },
   {
     id: 3,
     img: img3,
     name: "man power",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Manpower services involve providing personnel for various tasks, addressing workforce needs through recruitment, staffing, and workforce management solutions for businesses.",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const data = [
     name: "B2C services",
 
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "B2C (Business-to-Consumer) services directly cater to individual consumers, offering products or services for personal use or consumption.",
   },
 ];
 

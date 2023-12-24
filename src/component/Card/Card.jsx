@@ -11,7 +11,7 @@ function Card({ service, roundCard }) {
           <img
             src={service.img}
             alt="tech-support"
-            className={`w-[100px] 
+            className={`w-[180px] h-[150px]
             ${roundCard ? " rounded-full w-[150px] mb-3" : ""}`}
           />
         </div>
