@@ -6,7 +6,7 @@ function Contact() {
   return (
     <>
       <div className="w-full bg-[#695FE7] text-white">
-        <div className="text-center pt-5">
+        <div className="text-center pt-5 pb-10">
           <h1 className=" text-7xl capitalize font-bold ">contact us</h1>
         </div>
         <div className="w-full flex justify-evenly text-center ">
